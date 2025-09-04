@@ -80,7 +80,7 @@ nav>div>a:first-of-type{
     position: absolute;
     top: 60px;
     right: 30px;
-    display: none;
+    display: none; 
     overflow: hidden;
     
     
