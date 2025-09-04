@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-}
+} 
 body{
     height: 100vh;
    
@@ -80,7 +80,7 @@ nav>div>a:first-of-type{
     position: absolute;
     top: 60px;
     right: 30px;
-    display: block;
+    display: none;
     overflow: hidden;
     
     
@@ -93,6 +93,7 @@ nav>div>a:first-of-type{
     width: 100%;
     overflow-y:auto;
     border-radius: 32px;
+    
 }
 
 .submenu_container{
@@ -101,6 +102,7 @@ nav>div>a:first-of-type{
     width: 100%;
     margin: 0 auto;
     border-radius: 32px;
+    
     
 }
 
@@ -113,6 +115,7 @@ nav>div>a:first-of-type{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 16px;
+    
 
 }
 
