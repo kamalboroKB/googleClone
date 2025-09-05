@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,15 @@
                     <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a>
                     <a href="https://labs.google.com/search?source=hp&authuser=0"><img src="./Images/find.png" alt=""
                             height="18px"></a>
-                    <button class="toggle"><img src="./Images/dots-menu.png" alt="" height="18px"></button>
+
+
+
+                    <button class="toggle" onclick="toggleMenu_sub()"><img src="./Images/dots-menu.png" alt=""
+                            height="18px"></button>
                     <a href="https://accounts.google.com/"><img src="./Images/account_DP.jpg" alt="" height="32px"
                             class="account_DP"></a>
 
-                    <div class="sub_menu">
+                    <div class="sub_menu" id="sub_menu_id">
 
                         <div class="sub_menu_layer2">
                             <div class="submenu_container">
@@ -262,20 +266,21 @@
                 </div>
                 <div>
                     <button class="twoSearch">Google search</button>
-                    <button class="twoSearch">I'm Feeling Lucky</button>
+                    <button class="twoSearch" id="language_text">I'm Feeling Lucky</button>
 
                 </div>
-                <p class="language">Google offered in:
-                    <a href="" class="lang_english">English</a>
-                    <a href="" class="lang_hindi">हिन्दी</a>
-                    <a href="" class="lang_bangla">বাংলা</a>
-                    <a href="" class="lang_telugu">తెలుగు</a>
-                    <a href="" class="lang_marathi">मराठी</a>
-                    <a href="" class="lang_tamil">தமிழ்</a>
-                    <a href="" class="lang_gujrati">ગુજરાતી</a>
-                    <a href="" class="lang_kannada">ಕನ್ನಡ</a>
-                    <a href="" class="lang_malayalam">മലയാളം</a>
-                    <a href="" class="lang_Punjabi">ਪੰਜਾਬੀ</a>
+                <p class="language"><span id="offer_text">Google offered in</span>:
+                    <span class="all_language lang_english" onclick="english()">English</span>
+                    <span class="all_language lang_hindi" onclick="hindi()"> हिन्दी </span>
+
+                    <span class="all_language lang_bangla" onclick="bangla()">বাংলা</span>
+                    <span class="all_language lang_telugu" onclick="telugu()">తెలుగు</span>
+                    <span class="all_language lang_marathi" onclick="marathi()">मराठी</span>
+                    <span class="all_language lang_tamil" onclick="tamil()">தமிழ்</span>
+                    <span class="all_language lang_gujrati" onclick="gujrati()">ગુજરાતી</span>
+                    <span class="all_language lang_kannada" onclick="kannada()">ಕನ್ನಡ</span>
+                    <span class="all_language lang_malayalam" onclick="malayalam()">മലയാളം</span>
+                    <span class="all_language lang_punjabi" onclick="punjabi()">ਪੰਜਾਬੀ</span>
                 </p>
 
 
@@ -305,8 +310,23 @@
                     <div class="footer_right">
                         <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
                         <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
-                        <a href="">Settings</a>
+                        <span class="setting" onclick="toggleMenu()"> Settings </span>
+
+
                     </div>
+
+                    <div class="setting_menu" id="sub-setting">
+                        <p class="setting_text">Search settings</p>
+                        <p class="setting_text">Advanced search</p>
+                        <p class="setting_text">Your data in Search</p>
+                        <p class="setting_text">Search history</p>
+                        <p class="setting_text">Search help</p>
+                        <p class="setting_text">Send Feedback</p>
+                        <hr>
+                        <p class="setting_text dark_theme">Dark theme: Off</p>
+                    </div>
+
+
                 </div>
             </div>
 

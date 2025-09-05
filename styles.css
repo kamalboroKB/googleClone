@@ -87,6 +87,11 @@ nav>div>a:first-of-type{
     justify-content: center;
 }
 
+.sub_menu.open-sub{
+    display: block;
+
+}
+
 .sub_menu_layer2{
 
     height:100%;
@@ -284,12 +289,53 @@ textarea{
 
 .language>a{
     text-decoration: none;
-    color: blue;
+    
 }
+
+.all_language{
+    cursor: pointer;
+    color: blue;
+    display: inline-block;
+}
+
+
 
 .lang_english{
     display: none;
 }
+/* .lang_hindi{
+    display: inline-block;
+}
+.lang_bangla{
+    display: inline-block;
+}
+.lang_telugu{
+    display: inline-block;
+}
+.lang_marathi{
+    display: inline-block;
+}
+.lang_tamil{
+    display: inline-block;
+}
+.lang_gujrati{
+    display: inline-block;
+}
+.lang_kannada{
+    display: inline-block;
+}
+.lang_malayalam{
+    display: inline-block;
+}
+.lang_punjabi{
+    display: inline-block;
+} */
+
+
+
+
+
+
 .footer{
     background-color: #f2f2f2;
     /* display: flex;
@@ -340,6 +386,50 @@ hr{
     margin: 10px;
     text-decoration: none;
     list-style: none;
+}
+
+.setting{
+    position: relative;
+    cursor: pointer;
+}
+
+.setting_menu{
+    display: none;
+    font-size: 14px;
+    max-height: auto;
+    width: 158px;
+    background-color: white;
+    position: absolute;
+    bottom: 46px;
+    right: 20px;
+    padding:4px 0 ;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+    
+}
+
+.setting_menu.open-menu{
+    display: block;
+}
+
+.setting_menu > p {
+    line-height: 22px;
+    
+}
+
+.setting_menu > p:hover{
+    background-color: #d2d2d2;
+}
+
+.setting_text{
+    padding: 4px 16px;
+}
+
+.dark_theme{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 
