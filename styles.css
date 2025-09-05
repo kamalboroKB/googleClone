@@ -14,9 +14,14 @@ body{
 
 }
 
+
+
 a:link,a:visited,a:hover,a:active {
         color: #1f1f1f; /* Example: Sets the link color to black */
     }
+a:hover{
+    text-decoration: underline;
+}
 
 .main_body{
     /* background-color: aqua; */
@@ -209,6 +214,11 @@ nav>div>a:first-of-type{
     overflow: none;
     /* padding-top: 4px;
     padding-bottom: 4px; */
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+}
+#search_google:hover{
+    box-shadow: 0px 2px 21px 1px rgba(31,31,0,0.24);
+
 }
 
 .search_logo{
@@ -287,7 +297,7 @@ textarea{
     font-size: small;
 }
 
-.language>a{
+.language> span>a{
     text-decoration: none;
     
 }
@@ -431,6 +441,12 @@ hr{
     margin-top: 4px;
     margin-bottom: 4px;
 }
+
+
+.footer_bottom a:hover{
+    text-decoration: underline;
+}
+
 
 
 

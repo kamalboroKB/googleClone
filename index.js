@@ -9,6 +9,7 @@ const subSetting = document.querySelector("#sub-setting")
 
 function toggleMenu(){
     subSetting.classList.toggle("open-menu");
+    
 }
 
 
